@@ -1,138 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiamDeeMarie Construct</title>
+  <title>LDM Construct | Affordable Texas Homes</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f7f5f3;
       color: #333;
     }
     header {
-      background-color: #0c2d48;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    nav {
-      background-color: #145374;
-      text-align: center;
-      padding: 10px 0;
+    header img {
+      height: 60px;
     }
     nav a {
-      color: #fff;
-      margin: 0 15px;
+      margin: 0 1rem;
       text-decoration: none;
+      color: #8B0000;
       font-weight: bold;
     }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      background-color: #fff;
+    .hero {
+      background: #8B0000;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-    section {
-      margin-bottom: 30px;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #8B0000;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .model {
+      margin-bottom: 2rem;
+    }
+    .model h3 {
+      margin-bottom: 0.5rem;
+      color: #444;
     }
     footer {
-      background-color: #0c2d48;
-      color: #fff;
+      background: #eee;
+      padding: 1rem;
       text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #145374;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .disclaimer {
-      font-size: 0.8em;
-      color: #999;
-      margin-top: 10px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>LiamDeeMarie Construct</h1>
-    <p>Building Dreams Into Reality</p>
+    <img src="logo.png" alt="LDM Construct Logo">
+    <nav>
+      <a href="#models">Floor Plans</a>
+      <a href="#financing">Financing</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#mission">Mission</a>
-    <a href="#services">Services</a>
-    <a href="#plans">Floor Plans</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <p>At LiamDeeMarie Construct, our mission is to provide high-quality, affordable custom homes while empowering families through flexible financing and sustainable design solutions. We are committed to transforming land into thriving communities.</p>
-    </section>
-
-    <section id="services">
-      <h2>Services Offered</h2>
-      <ul>
-        <li><strong>Custom Home Construction</strong> – Personalized homebuilding tailored to your style, budget, and lifestyle needs</li>
-        <li><strong>Homebuyer Financing Support</strong> – Simplified access to funding through trusted partners like Hearth</li>
-        <li><strong>Architectural & Floor Plan Design</strong> – Efficient layouts and attractive aesthetics built with long-term comfort in mind</li>
-        <li><strong>Affordable Housing Development</strong> – Scalable community-based development across South Texas</li>
-      </ul>
-      <a class="btn" href="https://www.gethearth.com/" target="_blank">Apply for Financing</a>
-    </section>
-
-    <section id="plans">
-      <h2>Our Floor Plans</h2>
-      <p>Explore our three signature home models designed to fit a variety of lifestyles and budgets:</p>
-      <ul>
-        <li><strong>The Hunter Heritage Cottage</strong> – 1,200 sq ft, 2 bed, 1 bath
-          <ul>
-            <li>Classic farmhouse aesthetic with gabled roof and cedar columns</li>
-            <li>Walk-in closets, full laundry room, and a rear screened-in porch</li>
-            <li>Ideal for small families or retirees looking for simplicity and charm</li>
-          </ul>
-        </li>
-        <li><strong>The Willow Glen</strong> – 1,700 sq ft, 3 bed, 2 bath
-          <ul>
-            <li>Modern design with board and batten siding and two-gable single-slope roof</li>
-            <li>Spacious master suite, functional hallway design, and decorative shutters</li>
-            <li>Perfect for growing families seeking comfort and elegance</li>
-          </ul>
-        </li>
-        <li><strong>The Hayes Elite</strong> – 2,400 sq ft, 4–5 bed, 3 bath
-          <ul>
-            <li>Luxury layout with high ceilings, wraparound cherrywood porch, and indoor balcony</li>
-            <li>Includes mudroom, laundry, open-concept living/dining area, and pergola balcony from master suite</li>
-            <li>Designed for multi-generational families or those wanting ample space and premium features</li>
-          </ul>
-        </li>
-      </ul>
-      <a class="btn" href="#">View Floor Plan Highlights</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@liamdeemarie.com</p>
-      <p>Phone: 830-333-2558</p>
-      <p>Address: 608 Whitehead St, La Pryor, TX 78872</p>
-    </section>
+  <div class="hero">
+    <h1>Building Your Texas Dream Home</h1>
+    <p>Turnkey, affordable homes with modern farmhouse charm. Built for families. Backed by integrity.</p>
   </div>
 
+  <section class="section" id="models">
+    <h2>Featured Floor Plans</h2>
+    <div class="model">
+      <h3>Hunter Heritage Cottage</h3>
+      <p>1200 sq ft • 2 Bed • 1 Bath • Rear screened porch • Gabled entry • Coming soon</p>
+    </div>
+    <div class="model">
+      <h3>Willow Glen Cottage</h3>
+      <p>1800 sq ft • 4 Bed • 2.5 Bath • Single-slope metal roof • Separate dining/living/kitchen • Coming soon</p>
+    </div>
+    <div class="model">
+      <h3>Hayes Elite</h3>
+      <p>2400 sq ft • 5 Bed • 3 Bath • Wraparound porch • Double-slope roof • Master suite with balcony • Coming soon</p>
+    </div>
+  </section>
+
+  <section class="section" id="financing">
+    <h2>Financing Made Simple</h2>
+    <p>We partner with Hearth to offer fast, flexible financing options. Whether you're looking to pre-qualify or need help understanding your monthly costs, we've got you covered.</p>
+    <p><a href="https://app.gethearth.com/partners/liamdeemarie/overview" target="_blank">Get Pre-Qualified Now →</a></p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to learn more? We’d love to hear from you.</p>
+    <p>Email: <a href="mailto:liamdeemarieconstruct@gmail.com">liamdeemarieconstruct@gmail.com</a></p>
+    <p>Phone: <a href="tel:+18323652095">(832) 365-2095</a></p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 LiamDeeMarie Construct, LLC. All rights reserved.</p>
-    <p class="disclaimer">
-      Disclaimer: All content on this website is provided for informational purposes only and does not constitute a contract, guarantee, or legally binding offer. Availability of services, floor plans, financing, and pricing may vary based on location, eligibility, and project specifications. LiamDeeMarie Construct, LLC is not liable for decisions made based on the information herein. Please consult directly for custom quotes and agreements.
-    </p>
+    &copy; 2025 LDM Construct. All rights reserved.
   </footer>
 </body>
 </html>
