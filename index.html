@@ -1,33 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiamDeeMarie Construct</title>
+  <title>LDM Blueprint App</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #0c2d48;
-      color: #fff;
-      padding: 20px 0;
+      background-color: #800000;
+      color: white;
+      padding: 20px;
       text-align: center;
-    }
-    nav {
-      background-color: #145374;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
     }
     .container {
       padding: 20px;
@@ -38,101 +28,57 @@
     section {
       margin-bottom: 30px;
     }
-    footer {
-      background-color: #0c2d48;
-      color: #fff;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
+    input, button, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
     }
     .btn {
-      display: inline-block;
-      background-color: #145374;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
-    .disclaimer {
-      font-size: 0.8em;
-      color: #999;
-      margin-top: 10px;
+    .btn:hover {
+      background-color: #a00000;
+    }
+    h2 {
+      color: #800000;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>LiamDeeMarie Construct</h1>
-    <p>Building Dreams Into Reality</p>
+    <h1>LDM Blueprint App</h1>
+    <p>Client Access | Real-Time Markup | Blueprint Sharing</p>
   </header>
 
-  <nav>
-    <a href="#mission">Mission</a>
-    <a href="#services">Services</a>
-    <a href="#plans">Floor Plans</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <div class="container">
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <p>At LiamDeeMarie Construct, our mission is to provide high-quality, affordable custom homes while empowering families through flexible financing and sustainable design solutions. We are committed to transforming land into thriving communities.</p>
+    <section id="login">
+      <h2>Client Login</h2>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button class="btn">Login</button>
     </section>
 
-    <section id="services">
-      <h2>Services Offered</h2>
-      <ul>
-        <li><strong>Custom Home Construction</strong> – Personalized homebuilding tailored to your style, budget, and lifestyle needs</li>
-        <li><strong>Homebuyer Financing Support</strong> – Simplified access to funding through trusted partners like Hearth</li>
-        <li><strong>Architectural & Floor Plan Design</strong> – Efficient layouts and attractive aesthetics built with long-term comfort in mind</li>
-        <li><strong>Affordable Housing Development</strong> – Scalable community-based development across South Texas</li>
-      </ul>
-      <a class="btn" href="https://www.gethearth.com/" target="_blank">Apply for Financing</a>
+    <section id="upload">
+      <h2>Upload Blueprint</h2>
+      <input type="file" />
+      <button class="btn">Upload</button>
     </section>
 
-    <section id="plans">
-      <h2>Our Floor Plans</h2>
-      <p>Explore our three signature home models designed to fit a variety of lifestyles and budgets:</p>
-      <ul>
-        <li><strong>The Hunter Heritage Cottage</strong> – 1,200 sq ft, 2 bed, 1 bath
-          <ul>
-            <li>Classic farmhouse aesthetic with gabled roof and cedar columns</li>
-            <li>Walk-in closets, full laundry room, and a rear screened-in porch</li>
-            <li>Ideal for small families or retirees looking for simplicity and charm</li>
-          </ul>
-        </li>
-        <li><strong>The Willow Glen</strong> – 1,700 sq ft, 3 bed, 2 bath
-          <ul>
-            <li>Modern design with board and batten siding and two-gable single-slope roof</li>
-            <li>Spacious master suite, functional hallway design, and decorative shutters</li>
-            <li>Perfect for growing families seeking comfort and elegance</li>
-          </ul>
-        </li>
-        <li><strong>The Hayes Elite</strong> – 2,400 sq ft, 4–5 bed, 3 bath
-          <ul>
-            <li>Luxury layout with high ceilings, wraparound cherrywood porch, and indoor balcony</li>
-            <li>Includes mudroom, laundry, open-concept living/dining area, and pergola balcony from master suite</li>
-            <li>Designed for multi-generational families or those wanting ample space and premium features</li>
-          </ul>
-        </li>
-      </ul>
-      <a class="btn" href="#">View Floor Plan Highlights</a>
+    <section id="markup">
+      <h2>Real-Time Markup</h2>
+      <textarea placeholder="Add your comments or markup notes here..."></textarea>
+      <button class="btn">Save Markup</button>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@liamdeemarie.com</p>
-      <p>Phone: 830-333-2558</p>
-      <p>Address: 608 Whitehead St, La Pryor, TX 78872</p>
+    <section id="share">
+      <h2>Share Blueprint</h2>
+      <input type="email" placeholder="Enter client or team member's email" />
+      <button class="btn">Share</button>
     </section>
   </div>
-
-  <footer>
-    <p>&copy; 2025 LiamDeeMarie Construct, LLC. All rights reserved.</p>
-    <p class="disclaimer">
-      Disclaimer: All content on this website is provided for informational purposes only and does not constitute a contract, guarantee, or legally binding offer. Availability of services, floor plans, financing, and pricing may vary based on location, eligibility, and project specifications. LiamDeeMarie Construct, LLC is not liable for decisions made based on the information herein. Please consult directly for custom quotes and agreements.
-    </p>
-  </footer>
 </body>
 </html>
